@@ -1,0 +1,71 @@
+@import "../../styles/variables";
+
+.testimonials {
+  padding: 3rem 0;
+}
+.headingDiv {
+  text-align: center;
+}
+.tmSlide {
+  // outline: 1px solid blue;
+  padding: 2rem;
+  &_head {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  &_image {
+    // outline: 1px solid blue;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 8rem;
+    width: 8rem;
+  }
+  &_dtls {
+    padding: 1rem;
+    &Name {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+  &_cont {
+    // outline: 1px solid blue;
+    &Desc {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .tmSlide {
+    &_head {
+      justify-content: center;
+    }
+    &_cont {
+      &Desc,
+      &Date {
+        margin: auto;
+        text-align: center;
+      }
+      &Desc {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .tmSlide {
+    padding: 2rem 1rem;
+    &_head {
+      flex-direction: column;
+    }
+    &_image {
+      height: 6rem;
+      width: 6rem;
+    }
+    &_dtls {
+      text-align: center;
+    }
+  }
+}

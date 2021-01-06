@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 3rem 1rem;
+  h1 {
+    margin: 1.5rem 0;
+  }
+  h2 {
+    font-family: "Gotham Book";
+    color: unset;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  h3 {
+    margin: 0.75rem 0;
+  }
+  p {
+    max-width: unset;
+    margin-bottom: 0.5rem;
+  }
+  img {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+.date {
+  margin-bottom: 3rem;
+  display: block;
+}
+.title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem !important;
+}
+.author {
+  max-width: unset;
+  margin-bottom: 0.5rem;
+}
+.image {
+  margin: 1rem 0 2rem 0 !important;
+}

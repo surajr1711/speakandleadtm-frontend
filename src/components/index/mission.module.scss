@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+
+.mission {
+  margin-top: 5rem;
+}
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  flex: 0 1 500px;
+  padding: 2rem;
+}
+.imgContainer {
+  flex: 0 3 800px;
+  margin-right: 4rem;
+  &::before {
+    left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .imgContainer {
+    margin-right: 2rem;
+    &::before {
+      top: 2rem;
+      left: 2rem;
+    }
+  }
+  // .imgWrapper {
+  //   padding-top: 75%; // 4:3 aspect ratio
+  // }
+}
+
+@media only screen and (max-width: 1000px) {
+  // .imgWrapper {
+  //   padding-top: 100%; // 1:1 aspect ratio
+  // }
+}
+
+@media only screen and (max-width: 800px) {
+  .mission {
+    margin-top: 3rem;
+  }
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .content {
+    flex: 0 1 85%;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  .imgContainer {
+    flex: 0 1 80%;
+  }
+  // .imgWrapper {
+  //   padding-top: 66.67%;
+  // }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-bottom: 1rem;
+  }
+  // .imgWrapper {
+  //   padding-top: 100%;
+  // }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.heading {
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border-bottom: 4px solid $clr-blue;
+  h2 {
+    text-transform: capitalize;
+  }
+}

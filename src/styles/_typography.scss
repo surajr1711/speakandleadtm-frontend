@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/gothambook-webfont.woff2") format("woff2"),
+    url("../fonts/gothambook-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lubalin Graph Std";
+  src: url("../fonts/LubalinGraphStd-Book.woff2") format("woff2"),
+    url("../fonts/LubalinGraphStd-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h2 {
+  font-size: 3.5rem;
+  font-family: "Lubalin Graph Std", Georgia, "Times New Roman", Times, serif;
+  color: $clr-blue;
+  margin-bottom: 1rem;
+}
+h3,
+.headline {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+p {
+  // font-size: 1.125rem;
+  line-height: 1.5rem;
+  max-width: 600px;
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3,
+  .headline {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  // p {
+  //   font-size: 1rem;
+  // }
+}
+
+@media only screen and (max-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+  }
+}

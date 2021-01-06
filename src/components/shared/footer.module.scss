@@ -1,0 +1,115 @@
+@import "../../styles/variables";
+
+.Footer {
+  background: $clr-black;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.Footer_heading {
+  border-bottom: 4px solid rgba($clr-white, 0.7) !important;
+  margin: 2rem auto 1rem;
+  h2 {
+    color: rgba($clr-white, 0.7);
+  }
+  & + p {
+    text-align: center;
+    margin: 0 auto 1rem;
+    color: rgba($clr-white, 0.7);
+  }
+}
+
+.Footer_details {
+  text-align: left;
+  display: grid;
+  grid-template-columns: minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+  grid-template-areas:
+    "phone map social"
+    "address map .";
+}
+
+.Footer_box {
+  color: rgba($clr-white, 0.9);
+  padding: 1rem;
+  position: relative;
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+  address {
+    font-style: normal;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    position: relative;
+  }
+  ul {
+    list-style-type: none;
+  }
+  &___phone {
+    grid-area: phone;
+  }
+  &___address {
+    grid-area: address;
+  }
+  &___map {
+    grid-area: map;
+    background: rgba($clr-white, 0.7);
+  }
+  &___social {
+    grid-area: social;
+    justify-self: center;
+    a {
+      display: inline-block;
+    }
+  }
+  &Icon {
+    position: absolute;
+    font-size: 2rem;
+    left: 1rem;
+    top: 3.5rem;
+  }
+}
+.socialIcon {
+  font-size: 2rem;
+  color: $clr-white;
+  margin-right: 1rem;
+  transition: color 0.3s ease-in-out 0s;
+  &:hover {
+    color: $clr-red;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Footer_details {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "phone map"
+      "address map"
+      "social map";
+  }
+  .Footer_box___social {
+    justify-self: start;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Footer_details {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 420px auto;
+    grid-template-areas:
+      "phone"
+      "address"
+      "map"
+      "social";
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .Footer_details {
+    grid-template-rows: auto auto 320px auto;
+  }
+}

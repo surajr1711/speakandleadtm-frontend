@@ -1,0 +1,82 @@
+@import "../styles/variables";
+
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+  h2 {
+    font-family: "Gotham Book";
+    margin: 4rem 0 2rem 0.5rem;
+  }
+}
+
+.list {
+  list-style-type: none;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  justify-content: center;
+}
+
+// .post__recent {
+//   margin-bottom: 2rem;
+//   border-radius: 3px;
+//   overflow: hidden;
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+//   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+//   flex-basis: 400px;
+//   &:first-of-type {
+//     margin-right: 0.5rem;
+//     margin-bottom: 2rem;
+//   }
+//   &:last-of-type {
+//     margin-left: 0.5rem;
+//   }
+// }
+// .post__recent:hover,
+// .post__recent:focus {
+//   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+// }
+
+// .post_wrapper__latest,
+// .post_wrapper__recent {
+//   display: block;
+// }
+
+// .post_desc__latest,
+// .post_desc__recent {
+//   padding: 1rem;
+//   h3 {
+//     font-family: "Gotham Book";
+//     font-size: 1.5rem;
+//     margin-top: 0.5rem;
+//     margin-bottom: 0.25rem;
+//   }
+// }
+
+// @media only screen and (max-width: 800px) {
+//   .list {
+//     &__latest {
+//       margin-top: 0;
+//     }
+//     &__recent {
+//       display: block;
+//     }
+//   }
+//   .post__recent {
+//     &:first-of-type {
+//       margin-right: unset;
+//     }
+//     &:last-of-type {
+//       margin-left: unset;
+//     }
+//   }
+// }
+
+// // @media only screen and (max-width: 700px) {
+// //   .post_desc__latest,
+// //   .post_desc__recent {
+// //     margin: unset;
+// //     padding-top: 0.75rem;
+// //   }
+// // }
