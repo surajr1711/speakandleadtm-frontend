@@ -27,7 +27,7 @@ const query = graphql`
       }
     }
     sessionAgenda {
-      title
+      desc
     }
   }
 }
@@ -84,7 +84,7 @@ const Session = () => {
             <Heading ref={sessionHeadingRef} title={session.title} />
             
             <ul ref={sessionTimelineRef} className={styles.timeline}>
-              {sessionAgenda.map((segment, i) => <li key={`session-segment-${i}`}>{segment.title}</li> )}
+              {sessionAgenda.map((item, i) => <li key={`session-item-${i}`}>{item.desc}</li> )}
               {/* <li>Club president gives the opening address.</li>
               <li>Toastmaster of the Day conducts the session.</li>
               <li>Round robin section based on the theme of the day.</li>

@@ -4,12 +4,14 @@
   </a>
 </p>
 <h1 align="center">
-  Speak and Lead Toastmasters club Website
+  Speak and Lead Toastmasters Website
 </h1>
 
-## Project title
+## About
+<!-- ## Project title -->
 <!-- A little info about your project and/ or overview that explains **what** the project is about. -->
 Toastmasters is where you practice public speaking. This is a website for Speak and Lead Toastmasters (SALT), a local club in Muscat, Oman. The aim of the website is to provide information about what happens during the club sessions, a little about the club's history and it also serves as a blog for the club members to post articles about the sessions, events and personal development.
+[Link to project](https://speakandleadtm.netlify.app)
 
 ## Motivation
 <!-- A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists. -->
@@ -38,7 +40,7 @@ Include logo/demo screenshot etc.
 - [Swiper](https://swiperjs.com/react/)
 - Served on [Netlify](https://www.netlify.com/)
 
-<b>Back-end ([link to project](#)) was built with</b>
+<b>Back-end ([link to repo](https://github.com/surajr1711/speakandleadtm-backend)) was built with</b>
 - [Strapi](https://strapi.io/)
 - [Cloudinary](https://cloudinary.com/)
 - Served on [Heroku](https://www.heroku.com/)
